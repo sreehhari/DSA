@@ -11,7 +11,7 @@ public class hash{
             arr[i]=scanner.nextInt();
 
         }
-        int[]hash=new int[100];
+        double[] hash=new double[10000000];
         for(int i=0;i<n;i++){
             hash[arr[i]]+=1;
         }
@@ -23,7 +23,7 @@ public class hash{
         for(int i=0;i<q;i++){
             int number = scanner.nextInt();
             if(number<hash.length){
-                System.out.printf("the numeber %d appears in the array %d times \n",number,hash[number]);
+                System.out.printf("the numeber %d appears in the array %f times \n",number,hash[number]);
             }else{
                 System.out.println("array out of bound index\n");
             }
